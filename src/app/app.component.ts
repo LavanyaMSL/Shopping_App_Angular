@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Shopping-and-Recipe-app';
+isRecipe:boolean=true;
+
+changeFeatureinMain(feature:string){
+  this.isRecipe=feature==='recipe'?true:false;
+}
 }
